@@ -5,17 +5,19 @@ import java.util.Scanner;
 public class Ejercicio07 {
 
 	public static void main(String[] args) {
-
+		// Creamos el Scanner
 		Scanner sc = new Scanner(System.in);
 
 		String[] meses = { "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre",
 				"Octubre", "Noviembre", "Diciembre" };
 
 		double[] temperaturas = new double[meses.length];
+		
 
 		int posicion;
 
 		int numAsteriscos;
+		
 		int posicionAsterisco;
 
 		System.out.println("Introduce las temperaturas medias de cada mes:");

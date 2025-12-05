@@ -17,12 +17,17 @@ public class Ejercicio03 {
 			System.out.print("Introduce un número para la posición " + (i + 1) + ": ");
 			numero[i] = sc.nextInt();
 		}
-		// Mostramos los números introducidos
-		for (int i = 0; i < numero.length; i++) {
-			
-			System.out.println("Número en la posición " + (i + 1) + ": " + numero[i]);
+		// Mostramos los números introducidos de manera inversa
+		System.out.println("Números introducidos en orden inverso:");
+		for (int i = numero.length - 1; i >= 0; i--) {
+			System.out.println(numero[i]);
+		}
+		
+		// Cerramos el Scanner
+		sc.close();
+
 		}
 
 	}
 
-}
+

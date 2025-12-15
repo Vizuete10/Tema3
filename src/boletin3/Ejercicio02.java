@@ -10,6 +10,7 @@ public class Ejercicio02 {
 		double suma = 0;
         double max = 0;
         double min = 10;
+        double media = 0;
         
 		double[][] notas = new double[4][5];
 
@@ -31,6 +32,7 @@ public class Ejercicio02 {
                 System.out.print(notas[fila][columna] + "\t");
                 
                 suma = suma + notas[fila][columna];
+                media = suma / 5;
                 
                 if (notas[fila][columna] > max) {
                     max = notas[fila][columna];
@@ -39,9 +41,8 @@ public class Ejercicio02 {
                 if (notas[fila][columna] < min) {
                     min = notas[fila][columna];
                 }
-                
             }
-            System.out.print(" -> Suma: " + suma + " | Max: " + max + " | Min: " + min);
+            System.out.print(" -> Media: " + media + " | Max: " + max + " | Min: " + min);
             
             System.out.println();
         }
